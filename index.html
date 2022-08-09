@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Homework
+        </title>
+    </head>
+    <style>
+        h1{
+            background-color:yellowgreen;
+        }
+        p{
+            background-color:springgreen;
+            font-size:20px;
+        }
+        #image1{
+            background-color:aqua;
+            border-style:ridge;
+            border-width:15px;
+            border-radius:10px;
+            border-color:aquamarine;
+        }
+        button{
+            margin:40px;
+            width:20%;
+            background-color:cornflowerblue;
+            font-size:40px;
+        }
+    </style>
+    <body>
+        <h1>Bulb</h1>
+        <p id="on">Bulb On</p>
+        <img id="image1" src="https://flyclipart.com/thumbs/fears-of-using-outsourced-telefundraising-donor-care-light-bulb-on-and-off-javascript-1249225.png"height=450>
+        <br>
+        <button onclick="on()">on</button>
+        <button onclick="off()">off</button>
+
+        <script>
+            function on(){
+                document.getElementById("image1").src="https://s3files.core77.com/blog/images/0heatball.jpg";
+                document.getElementById("on").innerHTML="OFF";
+            }
+            function off(){
+                document.getElementById("image1").src="https://flyclipart.com/thumbs/fears-of-using-outsourced-telefundraising-donor-care-light-bulb-on-and-off-javascript-1249225.png";
+                document.getAnimations("off").innerHTML="ON";
+            }
+        </script>
+    </body>
+</html>
